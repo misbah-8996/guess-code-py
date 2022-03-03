@@ -1,0 +1,34 @@
+from random import randint
+guess=randint(10,30)
+count=2
+for i in range(3):
+  player_1=eval(input("Enter a number randomly between 10 and 30: "))
+    
+  if(player_1>guess):
+      print("lower, try again",count,"guesses left")
+      count=count-1
+  if(player_1<guess):
+      print("higher, try again",count,"guesses left")
+      count=count-1
+  if(player_1==-1):
+      print("thats not a guess")
+    
+
+if player_1==guess:
+  print("you won")
+else:
+  print("game over, the actual number was", guess)
+
+again=eval(input("try again? "))
+if again=="yes":
+  for i in range(3):
+    print(eval(input("Enter a number randomly between 10 and 30: ")))
+    if(player_1>guess):
+      print("lower, try again",count,"guesses left")
+      count=count-1
+  if(player_1<guess):
+      print("higher, try again",count,"guesses left")
+      count=count-1
+  if(player_1==-1):
+      print("thats not a guess")
+   
